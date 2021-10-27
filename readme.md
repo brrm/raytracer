@@ -2,7 +2,7 @@
 Simple ray tracer implemented in both C++ and Go
 
 ## Example Image
-![example image](https://github.com/brrm/raytracer/example.png)
+![example image](https://raw.githubusercontent.com/brrm/raytracer/master/example.png)
 
 ## Features
 - Shapes: Spheres
