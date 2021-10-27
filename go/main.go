@@ -32,9 +32,9 @@ func rayColor(r ray, w hittableList, depth int, generator *rand.Rand) color {
 func main() {
 	// Image
 	const aspectRatio = 16.0 / 9.0
-	const imageWidth = 1200
+	const imageWidth = 1600
 	const imageHeight = int(float64(imageWidth) / aspectRatio)
-	const samplesPerPixel = 10
+	const samplesPerPixel = 50
 	const maxDepth = 50
 
 	// World
@@ -42,7 +42,7 @@ func main() {
 	var lookFrom, lookAt point3
 	vfov := 40.0
 	aperture := 0.0
-	switch 0 {
+	switch 3 {
 	case 0:
 		world = randomScene()
 		lookFrom = newPoint3(13, 2, 3)
@@ -60,6 +60,12 @@ func main() {
 		lookFrom = newPoint3(13, 2, 3)
 		lookAt = newPoint3(0, 0, 0)
 		vfov = 20.0
+	case 3:
+		world = demoScene()
+		lookFrom = newPoint3(13, 2, 3)
+		lookAt = newPoint3(0, 0, 0)
+		vfov = 20.0
+		aperture = 0.1
 	}
 
 	// Camera

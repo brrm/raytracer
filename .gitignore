@@ -2,4 +2,6 @@
 *.ppm
 *.out
 go/images
-go/raytracing
+go/go
+go/go.mod
+go/go.sum
