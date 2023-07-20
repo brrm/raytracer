@@ -1,0 +1,7 @@
+.DS_Store
+*.ppm
+*.out
+go/images
+go/go
+go/go.mod
+go/go.sum
